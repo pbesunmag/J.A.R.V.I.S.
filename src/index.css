@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* --- OCULTAR EL FOOTER DUPLICADO DEL WIDGET --- */
+/* ElevenLabs inyecta contenedores flotantes automáticos que ocultamos globalmente */
+elevenlabs-convai::part(floating),
+elevenlabs-convai div[style*="fixed"],
+elevenlabs-convai div[style*="absolute"] {
+  display: none !important;
+}
+
+/* --- CENTRADO Y AJUSTE FINO DEL NÚCLEO --- */
+elevenlabs-convai {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transform: translate(0, -100px) !important; /* Modifica estos valores si necesitas moverlo unos píxeles */
+}
